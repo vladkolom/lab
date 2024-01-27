@@ -20,7 +20,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+        with:
+        submodules: recursive
+        ref: ${{ github.head_ref }}
+        node-version: '20'
+        
       - name: Install RPM build tools
         run: |
           yum install -y rpm-build rpmdevtools wget unzip
