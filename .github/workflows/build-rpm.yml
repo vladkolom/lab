@@ -30,7 +30,7 @@ jobs:
         run: |
           cp rpm/calcfiles.spec ~/rpmbuild/SPECS/
           cd ~/rpmbuild/SOURCES/
-          wget  https://github.com/RemmReyy/lab/archive/main.zip
+          wget  https://github.com/vladkolomiets/lab/archive/main.zip
           cd ../../
           rpmbuild -bs --define "dist .generic" rpmbuild/SPECS/calcfiles.spec
           rpmbuild --rebuild rpmbuild/SRPMS/calcfiles-1.0-1.generic.src.rpm
