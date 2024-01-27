@@ -1,0 +1,13 @@
+Source: calcfiles
+Version: 1.0.0
+Section: utils
+Priority: optional
+Maintainer: Bohdan Remeniuk <bogdansnou@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.5.0
+Homepage: https://github.com/RemmReyy/lab
+Package: calcfiles
+Architecture: all
+Depends: bash
+Description: A simple script to calculate files in a directory
+ This script counts the number of files in a given directory.
